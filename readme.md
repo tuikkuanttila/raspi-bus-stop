@@ -1,6 +1,6 @@
 # Bus stop display with Raspberry Pi
 
-![Picture of display](raspi-bus-stop_smaller.jpg)
+![Picture of display](departures.png)
 
 A simple project to connect a small LCD display to a Raspberry Pi and
 use Python to request bus departure information from the Helsinki Region Transport open API.
@@ -8,6 +8,8 @@ use Python to request bus departure information from the Helsinki Region Transpo
 The project was built using a Raspberry Pi Model B and Python 2.7. 
 
 For the LCD driver code I am using the LCD library from Adafruit, https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/blob/master/Adafruit_CharLCD/Adafruit_CharLCD.py , with one small change to make it work on a Raspberry Pi Model B. The line def init(self, pin_rs=25, pin_e=24, pins_db=[23, 17, 21, 22], GPIO = None): in Adafruit_CharLCD.py should be changed to def __init__(self, pin_rs=25, pin_e=24, pins_db=[23, 17, 27, 22], GPIO = None): 
+
+![Picture of whole system](raspi-bus-stop_smaller.jpg)
 
 ## Instructions
 
