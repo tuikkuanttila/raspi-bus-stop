@@ -1,5 +1,7 @@
 # Bus stop display with Raspberry Pi
 
+![Picture of display](raspi-bus-stop_smaller.jpg)
+
 A simple project to connect a small LCD display to a Raspberry Pi and
 use Python to request bus departure information from the Helsinki Region Transport open API.
 
